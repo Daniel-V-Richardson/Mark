@@ -62,6 +62,7 @@ function chatStripe(isAi, value, uniqueId) {
     )
 }
 
+
 const handleSubmit = async (e) => {
     e.preventDefault()
 
@@ -85,8 +86,8 @@ const handleSubmit = async (e) => {
 
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
-
-    const response = await fetch('https://mark-sm64.onrender.com', {
+//https://mark-sm64.onrender.com
+    const response = await fetch('https://mark-sm64.onrender.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
