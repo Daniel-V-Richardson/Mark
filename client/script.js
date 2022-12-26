@@ -74,8 +74,8 @@ const handleSubmit = async (e) => {
   const messageDiv = document.getElementById(uniqueId);
 
   loader(messageDiv);
-  //https://mark-sm64.onrender.com
-  const response = await fetch("https://mark-sm64.onrender.com/", {
+  //http://localhost:5000
+  const response = await fetch("https://mark-sm64.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
