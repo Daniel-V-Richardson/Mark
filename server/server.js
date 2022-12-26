@@ -27,8 +27,7 @@ app.post("/", async (req, res) => {
 
     const response = await openai.createCompletion({
       model: "code-davinci-003",
-      prompt: "Add Two Numbers in Java",
-      // prompt: `${prompt}`,
+      prompt: `${prompt}`,
       temperature: 0,
       max_tokens: 3000,
       top_p: 1,
